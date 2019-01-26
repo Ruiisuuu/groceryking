@@ -1,0 +1,37 @@
+[
+{
+  "name": "Mozerella cheese",
+  "location": "180, 205"
+} ,
+
+{
+"name": "Sliced white bread",
+"location" : "317, 212"
+},
+
+{
+"name": "Doritos",
+"location": "326, 373"
+},
+
+{
+"name": "Frozen bread",
+"location" : "879, 123"
+},
+
+{
+"name": "Canned tuna",
+"location": "410, 273"
+},
+
+{
+"name": "Almonds",
+"location": "298, 303"
+},
+
+{
+"name": "Sliced cheese",
+"location": "210, 130"
+},
+
+]
