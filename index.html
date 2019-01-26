@@ -8,56 +8,25 @@
     <title>Grocery King</title>
 
 	<style>
-
-	.map
-	{
-		position: relative;
-		z-index: 1;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
-	}
-	.marker
-	{
-		position:absolute;
-		top: 45px;
-		left: 150px;
-		z-index: 2;
-	}
+        .marker
+        {
+            position:absolute;
+            top: 45px;
+            left: 15px;
+            z-index: 2;
+        }
 	</style>
 </head>
 <body>
     <nav class="navbar navbar-light bg-light">
-            <form class="form-inline mx-2 w-100">
-                <input class="form-control mx-2 w-100" ype="search" id="myInput" onkeyup="myFunction()" placeholder="Search for grocery items.." aria-label="Search">
-                <ul id="myUL">
-                    <li><a href="#">Adele</a></li>
-                    <li><a href="#">Agnes</a></li>
+            <input class="form-control w-100" id="grocery-input" placeholder="Search for grocery items.." aria-label="Search">
+            <div id="items-list" class="w-100 d-none"></div>
+    </nav>
+    <div id="map" class="position-relative">
 
-                    <li><a href="#">Billy</a></li>
-                    <li><a href="#">Bob</a></li>
+        <img src="https://img.icons8.com/color/32/000000/map-pin.png" class="position-absolute top: 100px; left: 150px;">
+    </div>
 
-                    <li><a href="#">Calvin</a></li>
-                    <li><a href="#">Christina</a></li>
-                    <li><a href="#">Cindy</a></li>
-                </ul>
-            </form>
-            </div>
-        </nav>
-        <div class="map">
-          <img src="store-directorygood.jpg">
-          <img src="https://img.icons8.com/color/32/000000/map-pin.png" class="marker">
-        </div>
-    <!--  <svg class = "position : relative;"/>
-
-      <img src="store-directorygood.jpg" width= 100% height = 100% alt="Website map" usemap="#mapname"
-      class= "position : relative"/>
-      <img src="https://img.icons8.com/color/32/000000/map-pin.png" x =30 y = 30
-      class = "position : absolute;"/>
-    </svg> */
-  -->
-
-
+    <script src="index.js"></script>
 </body>
 </html>
