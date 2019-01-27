@@ -1,5 +1,3 @@
-document.getElementById('')
-
 let items = [
     {
         "name": "Mozerella cheese",
@@ -56,7 +54,7 @@ function setPin(name){
             pin.style.position = "absolute";
             pin.style.top = `${item.locationy}%`;
             pin.style.left = `${item.locationx}%`;
-            pin.classList.appendChild("pin")
+            pin.className = "pin";
             document.getElementById('map').appendChild(pin);
         }
     });
