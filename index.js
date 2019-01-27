@@ -2,7 +2,7 @@ let items = [
     {
     "name": "CHHESSEE",
     "locationx": 30,
-    "locationy": 50, 
+    "locationy": 50,
     }, {
     "name": "HAMMM",
     "location": "there",
@@ -35,7 +35,7 @@ function setPin(name){
 }
 
 // Event: On load
-document.addEventListener('DOMContentLoaded', () => {  
+document.addEventListener('DOMContentLoaded', () => {
     renderItems();
 });
 
@@ -46,7 +46,7 @@ document.getElementById("grocery-input").addEventListener("focusin", () => {
 });
 
 document.getElementById("grocery-input").addEventListener("focusout", () => {
-    setTimeout(function(){ 
+    setTimeout(function(){
         document.getElementById("items-list").classList.add("d-none");
         document.getElementById("items-list").classList.remove("d-block");}, 200);
 });
@@ -75,4 +75,8 @@ document.getElementById('items-list').addEventListener('click', (e) => {
     setPin(e.target.innerHTML);
 });
 
-//document.getElementsByTagName('[data-rel=popover]').popover();
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
