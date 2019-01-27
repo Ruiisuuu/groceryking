@@ -6,16 +6,109 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <title>Grocery King</title>
+<<<<<<< HEAD
+=======
+
+	<style>
+
+        .map
+        {
+        	position: relative;
+        	z-index: 1;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 85%;
+        }
+        .marker
+        {
+        	position:absolute;
+        	top: 45px;
+        	left: 150px;
+        	z-index: 2;
+        }
+        .marker
+        {
+            position:absolute;
+            top: 45px;
+            left: 15px;
+            z-index: 2;
+        }
+        /* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+	</style>
+>>>>>>> 2e687af8ee81c720de173309c1da597c699da841
 </head>
 <body>
     <nav class="navbar navbar-light bg-light">
             <input class="form-control w-100" id="grocery-input" placeholder="Search for grocery items.." aria-label="Search">
             <div id="items-list" class="w-100 d-none"></div>
     </nav>
+<<<<<<< HEAD
     <div id="map" class="position-relative d-block w-100 h-auto">
         <img src="image.jpg" class="w-100 h-100"></img>
+=======
+    <div id="map" class="position-relative">
+      <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+        <a data-toggle="popover"> <img src="https://img.icons8.com/color/32/000000/map-pin.png" class="position-absolute top: 100px; left: 150px;"></a>
     </div>
-
+    <div class="popup" onclick="myFunction()">Click me!
+      <span class="popuptext" id="myPopup">Popup text...</span>
+>>>>>>> 2e687af8ee81c720de173309c1da597c699da841
+    </div>
     <script src="index.js"></script>
+    
+
+
 </body>
 </html>
