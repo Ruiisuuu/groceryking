@@ -49,13 +49,20 @@ function renderItems(){
 function setPin(name){
     items.forEach(item => {
         if (name === item.name){
+            let container = document.createElement('div');
             let pin = document.createElement('img');
+            pin.className="click";
             pin.setAttribute("src","https://img.icons8.com/color/32/000000/map-pin.png");
-            pin.style.position = "absolute";
-            pin.style.top = `${item.locationy}%`;
-            pin.style.left = `${item.locationx}%`;
-            pin.className = "pin";
-            document.getElementById('map').appendChild(pin);
+            container.style.position = "absolute";
+            container.style.top = `${item.locationy}%`;
+            container.style.left = `${item.locationx}%`;
+            container.className = "pin popover data-toggle=\"popover\" title=\"Popover Header\" data-content=\"Some content inside the popover\"";
+            let popover = document.createElement('div');
+            popover.className = 'yeet d-none';
+            popover.innerHTML = "<div class=\"popuptext\" id=\"myPopup\">Popup text...</div>";
+            container.appendChild(pin);
+            container.appendChild(popover);
+            document.getElementById('map').appendChild(container);
         }
     });
 }
@@ -101,7 +108,9 @@ document.getElementById('items-list').addEventListener('click', (e) => {
 });
 
 document.addEventListener('click', (e) => {
-    if(e.target.classList.contains("pin")){
-        e.target.classList.toggle("d-none");
+    console.log('yee')
+    if(e.target.classList.contains("click")){
+        console.log('hello')
+        e.target.parentElement.getElementsByClassName('yeet')[0].classList.toggle("d-none");
     }
 });
