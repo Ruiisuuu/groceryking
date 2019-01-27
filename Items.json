@@ -1,36 +1,43 @@
 [
 {
   "name": "Mozerella cheese",
-  "location": "180, 205"
+  "locationx": "180" ,
+  "locationy": "205"
 } ,
 
 {
 "name": "Sliced white bread",
-"location" : "317, 212"
+"locationx" : "317" ,
+"locationy" : "212"
 },
 
 {
 "name": "Doritos",
-"location": "326, 373"
+"locationx": "326" ,
+"locationy": "373"
 },
 
 {
 "name": "Frozen bread",
-"location" : "879, 123"
+"locationx" : "879" ,
+"locationy":  "123"
 },
 
 {
 "name": "Canned tuna",
-"location": "410, 273"
+"locationx": "410" ,
+"locationy" : "273"
 },
 
 {
 "name": "Almonds",
-"location": "298, 303"
+"locationx": "298",
+"locationy" : "303"
 },
 
 {
 "name": "Sliced cheese",
-"location": "210, 130"
+"locationx" : "210" ,
+"locationy": "130"
 }
 ]

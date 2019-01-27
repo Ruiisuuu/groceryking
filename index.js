@@ -1,35 +1,63 @@
+document.getElementById('')
+
 let items = [
     {
-    "name": "CHHESSEE",
-    "locationx": 30,
-    "locationy": 50, 
-    }, {
-    "name": "HAMMM",
-    "location": "there",
+        "name": "Mozerella cheese",
+        "locationx": 180/10.5,
+        "locationy": 205/8.11
+    } ,
+    {
+        "name": "Sliced white bread",
+        "locationx" : 317/10.5,
+        "locationy" : 212/8.11
+    },
+    {
+        "name": "Doritos",
+        "locationx": 326/10.5 ,
+        "locationy": 373/8.11
+    },
+    {
+        "name": "Frozen bread",
+        "locationx" : 879/10.5 ,
+        "locationy":  123/8.11
+    },
+    {
+        "name": "Canned tuna",
+        "locationx": 410/10.5 ,
+        "locationy" : 273/8.11
+    },
+    {
+        "name": "Almonds",
+        "locationx": 298/10.5,
+        "locationy" : 303/8.11
+    },
+    
+    {
+        "name": "Sliced cheese",
+        "locationx" : 210/10.5 ,
+        "locationy": 130/8.11
     }
-];
+    ];
 
 function renderItems(){
     items.forEach(item => {
         let a = document.createElement("a");
-        a.className = "list-group-item list-group-item-action w-100";
+        a.className = "list-group-item list-group-item-action w-100 item";
         a.innerHTML = `${item.name}`;
         document.getElementById("items-list").appendChild(a);
     });
 }
 
-function renderPin(item){
-    let pin = document.createElement('img');
-    pin.setAttribute("src","https://img.icons8.com/color/32/000000/map-pin.png");
-    pin.className = `class="position-absolute top: ${item.locationx}px; left: ${item.locationy}px; z-index: 2;"`
-    document.getElementById('map').appendChild(pin);
-
-}
-
 function setPin(name){
     items.forEach(item => {
         if (name === item.name){
-            renderPin(item);
+            let pin = document.createElement('img');
+            pin.setAttribute("src","https://img.icons8.com/color/32/000000/map-pin.png");
+            pin.style.position = "absolute";
+            pin.style.top = `${item.locationy}%`;
+            pin.style.left = `${item.locationx}%`;
+            pin.classList.appendChild("pin")
+            document.getElementById('map').appendChild(pin);
         }
     });
 }
@@ -75,4 +103,8 @@ document.getElementById('items-list').addEventListener('click', (e) => {
     setPin(e.target.innerHTML);
 });
 
-//document.getElementsByTagName('[data-rel=popover]').popover();
+document.addEventListener('click', (e) => {
+    if(e.target.classList.contains("pin")){
+        e.target.classList.toggle("d-none");
+    }
+});
