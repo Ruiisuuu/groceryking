@@ -44,7 +44,7 @@ let items = [
         "description": "Nuts n stuff, the worst kind tho",
         "locationx": 260/10.5,
         "locationy" : 303/8.11,
-        "image" : "/images/almonds.jpeg",
+        "image" : "/images/almonds.jpg",
         "price": "0.55$"
     }
     ];
