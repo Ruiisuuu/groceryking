@@ -1,38 +1,38 @@
 let items = [
     {
         "name": "Mozerella cheese",
-        "locationx": 180/10.5,
-        "locationy": 205/8.11
+        "locationx": 14,
+        "locationy": 15
     } ,
     {
         "name": "Sliced white bread",
-        "locationx" : 317/10.5,
+        "locationx" : 313/10.5,
         "locationy" : 212/8.11
     },
     {
         "name": "Doritos",
-        "locationx": 326/10.5 ,
+        "locationx": 335/10.5 ,
         "locationy": 373/8.11
     },
     {
         "name": "Frozen bread",
-        "locationx" : 879/10.5 ,
+        "locationx" : 850/10.5 ,
         "locationy":  123/8.11
     },
     {
         "name": "Canned tuna",
-        "locationx": 410/10.5 ,
-        "locationy" : 273/8.11
+        "locationx": 373/10.5 ,
+        "locationy" : 250/8.11
     },
     {
         "name": "Almonds",
-        "locationx": 298/10.5,
+        "locationx": 260/10.5,
         "locationy" : 303/8.11
     },
-    
+
     {
         "name": "Sliced cheese",
-        "locationx" : 210/10.5 ,
+        "locationx" : 205/10.5 ,
         "locationy": 130/8.11
     }
     ];
@@ -61,7 +61,7 @@ function setPin(name){
 }
 
 // Event: On load
-document.addEventListener('DOMContentLoaded', () => {  
+document.addEventListener('DOMContentLoaded', () => {
     renderItems();
 });
 
@@ -72,7 +72,7 @@ document.getElementById("grocery-input").addEventListener("focusin", () => {
 });
 
 document.getElementById("grocery-input").addEventListener("focusout", () => {
-    setTimeout(function(){ 
+    setTimeout(function(){
         document.getElementById("items-list").classList.add("d-none");
         document.getElementById("items-list").classList.remove("d-block");}, 200);
 });
