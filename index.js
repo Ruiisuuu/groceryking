@@ -4,7 +4,7 @@ let items = [
         "description": "A slice of cheese from italy it's pretty gooood",
         "locationx": 14,
         "locationy": 15,
-        "image" : "/images/cheese.jpg",
+        "image" : "./images/cheese.jpg",
         "price": "2.95$"
     } ,
     {
@@ -12,7 +12,7 @@ let items = [
         "description": "BREEEAAAAAADDDDDDDD",
         "locationx" : 313/10.5,
         "locationy" : 212/8.11,
-        "image" : "/images/bread.jpg",
+        "image" : "./images/bread.jpg",
         "price": "3.95$"
     },
     {
@@ -20,7 +20,7 @@ let items = [
         "description": "For the big of bone",
         "locationx": 335/10.5 ,
         "locationy": 373/8.11,
-        "image" : "/images/doritos.png",
+        "image" : "./images/doritos.png",
         "price": "5.95$"
     },
     {
