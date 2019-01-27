@@ -82,17 +82,16 @@ document.getElementById("grocery-input").addEventListener("keyup", () => {
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById('grocery-input');
     filter = input.value.toUpperCase();
-    ul = document.getElementById("items-list");
-    li = ul.getElementsByTagName('li');
+    div = document.getElementById("items-list");
+    links = div.getElementsByTagName('a');
 
     // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+    for (i = 0; i < links.length; i++) {
+        txtValue = links[i].textContent || links[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1){
+            links[i].style.display = "";
         } else {
-            li[i].style.display = "none";
+            links[i].style.display = "none";
         }
     }
 });
