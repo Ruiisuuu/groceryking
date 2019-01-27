@@ -12,7 +12,7 @@ let items = [
         "description": "BREEEAAAAAADDDDDDDD",
         "locationx" : 313/10.5,
         "locationy" : 212/8.11,
-        "image" : "./images/bread.jpg",
+        "image" : "groceryking/images/bread.jpg",
         "price": "3.95$"
     },
     {
@@ -20,7 +20,7 @@ let items = [
         "description": "For the big of bone",
         "locationx": 335/10.5 ,
         "locationy": 373/8.11,
-        "image" : "./images/doritos.png",
+        "image" : "groceryking/images/doritos.png",
         "price": "5.95$"
     },
     {
@@ -28,7 +28,7 @@ let items = [
         "description": "Why would anyone buy frozen bread",
         "locationx" : 850/10.5 ,
         "locationy":  123/8.11,
-        "image" : "/images/fbread.jpg",
+        "image" : "groceryking/images/fbread.jpg",
         "price": "4.95$"
     },
     {
@@ -36,7 +36,7 @@ let items = [
         "description": "Tuna sandwich incoming",
         "locationx": 373/10.5 ,
         "locationy" : 250/8.11,
-        "image" : "/images/tuna.jpg",
+        "image" : "groceryking/images/tuna.jpg",
         "price": "0.95$"
     },
     {
